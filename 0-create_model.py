@@ -1,8 +1,6 @@
 import tensorflow as tf
-
 from tensorflow.keras import  layers, models
 import matplotlib.pyplot as plt
-
 from tensorflow.keras.datasets import cifar10, fashion_mnist, cifar100
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, Activation, BatchNormalization
