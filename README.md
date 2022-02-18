@@ -11,7 +11,7 @@ In order to run "0-create_model.py", following inputs are required:
 * The dimension of input images: would be stored in "input_shape",
 * The number of agents to be created: would be stored in "model_no",
 * train and validation dataset: would be stored in "train_data", "validation_data" (validation could be ignored),
-* The classifier architecture: could be defined in "define_model" in "build_model.py".
+* The classifier architecture: could be defined in "define_model" in "build_model.py",
 * The "train_df_path" should be set to be the train file path, if you using "load_input_data.py" for loading image files.
 
 
@@ -24,7 +24,7 @@ In order to run "1-Eval_model.py", following inputs are required:
 * The input images: would be stored in "input_test",
 * Outputs of test inputs (and its neighborhoods and manipulations) for each classifier: would be stored numpy array in files "Results" folder,
 * The number of neighborhoods and manipulations: would be stored in "no_classes",
-* Ordered correct labels of inputs: would be stored in "target_test".
+* Ordered correct labels of inputs: would be stored in "target_test",
 * The "project_path", "data_dir",  should be set to be the project path and test file path.
 
 
@@ -41,9 +41,9 @@ For further investigation, result of these multi-agent systems, for every input 
 
 
 In order to run "2-MASKS.py", following inputs are required:
-* Outputs of test inputs (and its neighborhoods and manipulations) for each classifier: would be stored numpy array in files "Results" folder.
-* The number of output classes: would be stored in "no_classes"
-* The number of neighborhoods and manipulations: would be stored in "nei_man_no"
+* Outputs of test inputs (and its neighborhoods and manipulations) for each classifier: would be stored numpy array in files "Results" folder,
+* The number of output classes: would be stored in "no_classes",
+* The number of neighborhoods and manipulations: would be stored in "nei_man_no",
 * Ordered correct labels of inputs: would be stored in "target_test".
 
 The Modified Fashion MNIST, MNIST, and Fruit-360 examples could be found in https://github.com/iuwa/MASKS (FashionMNIST-MASKS.zip, MNIST-MASKS.zip, and Fruit-360-MASKS.zip).
