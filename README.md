@@ -1,5 +1,5 @@
 # MASKS's Tool
-MASKS is a tool in order to verify multi-classifier with a predefined property. Using MASKS, satisfaction of the property for all classifiers would be checked. In other words, if the property $\varphi$ satisfied using knowledge of all agents, it would be the verified formula (property). Here, we use the operator $D_A \varphi$ from Public Announcement Logic to collect distributed knowledge of classifiers. 
+MASKS is a tool in order to verify multi-classifier with a predefined property. Using MASKS, satisfaction of the property for all classifiers would be checked. In other words, if the property φ satisfied using knowledge of all agents, it would be the verified formula (property). Here, we use the operator D_A φ from Public Announcement Logic to collect distributed knowledge of classifiers. 
 
 Here, for more convenient, we developed python codes in three steps to run the tool. Each first two step could be replaced by self created ones. These two steps are developed to provide inputs for the MASKS tool. 
 
