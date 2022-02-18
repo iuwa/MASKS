@@ -3,22 +3,17 @@ MASKS is a tool in order to verify multi-classifier with a predefined property. 
 
 Here, for more convenient, we developed python codes in three steps to run the tool. Each first two step could be replaced by self created ones. These two steps are developed to provide inputs for the MASKS tool. 
 
-The first one is ``0-create\_model.py'' in which, classifiers would be created. After defining the target dataset, the input data would be collected using ``load\_input\_data'' function. The output of this function should be contains a set of train images; and it should be stored in ``train\_data'' variable. In this python file, the train data would be applied to train classifiers (i.e.,  ANNs). The architecture of the classifiers could be defined in ``define\_model'' function in ``build\_model.py''. The number of output classes (``no\_classes'') and the input shape (``input\_shape'') should be determined. The output would be multiple classifiers. These classifiers would be stored into the ``Models'' folder. The number of classifiers could be determined by ``model\_no'' variable.
+The first one is ``0-create_model.py'' in which, classifiers would be created. After defining the target dataset, the input data would be collected using ``load_input_data'' function. The output of this function should be contains a set of train images; and it should be stored in ``train_data'' variable. In this python file, the train data would be applied to train classifiers (i.e.,  ANNs). The architecture of the classifiers could be defined in ``define_model'' function in ``build_model.py''. The number of output classes (``no_classes'') and the input shape (``input_shape'') should be determined. The output would be multiple classifiers. These classifiers would be stored into the ``Models'' folder. The number of classifiers could be determined by ``model\_no'' variable.
 
 
-In order to run ``0-create\_model.py'', following inputs are required:
-\begin{itemize}
-    \item The number of output classes:
-    would be stored in ``no\_classes'',
-    \item The dimension of input images:
-    would be stored in ``input\_shape'',
-    \item The number of agents to be created:
-    would be stored in ``model\_no'',
-    \item train and validation dataset: would be stored in ``train\_data'', ``validation\_data'' (validation could be ignored),
-    \item The classifier architecture:
-    could be defined in ``define\_model'' in ``build\_model.py''.
-    \item The ``train\_df\_path'' should be set to be the train file path, if you using ``load\_input\_data.py'' for loading image files.
-\end{itemize}
+In order to run ``0-create_model.py'', following inputs are required:
+* The number of output classes: would be stored in ``no_classes'',
+* The dimension of input images: would be stored in ``input_shape'',
+* The number of agents to be created: would be stored in ``model_no'',
+* train and validation dataset: would be stored in ``train_data'', ``validation_data'' (validation could be ignored),
+* The classifier architecture: could be defined in ``define_model'' in ``build_model.py''.
+* The ``train_df_path'' should be set to be the train file path, if you using ``load_input_data.py'' for loading image files.
+
 
 
 Next, using the stored model in the ``Models'' folder, ``1-Eval\_model.py'' could be executed to evaluate test inputs and their neighborhoods and manipulations. The set of neighborhoods and manipulations would be defined in \textit{python class} ``NeighMan'' (here is a set of noise on input image). The output of ``1-Eval\_model.py'' would be results of inputs, neighborhoods and manipulations  for each classifier in a \textit{numpy} file in ``Results'' folder.
